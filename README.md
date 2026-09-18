@@ -12,8 +12,7 @@ A dynamic generative artwork created with Processing.
 2. Extract and open the `.zip` file.
 3. Double-click `MeteorShower.exe` to launch the animation instantly.
 
-> **Note:** The pre-built `.exe` is for **64-bit Windows only**.  
-> Mac/Linux users, or anyone wanting to run the source, should follow the steps below.
+> **Note:** The pre-built `.exe` is for **64-bit Windows only**.
 
 ## Run the Sketch
 
