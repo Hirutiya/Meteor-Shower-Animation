@@ -2,6 +2,10 @@
 
 A dynamic generative artwork created with Processing.
 
+## Preview
+
+![Meteor Shower Preview](asset/preview.gif)
+
 ## Run the Sketch
 
 1. Download and install [**Processing**](https://processing.org)
