@@ -8,7 +8,7 @@ A dynamic generative artwork created with Processing.
 
 ## View the Animation (Windows 64-bit)
 
-1. Download the `Meteor Shower Animation.zip` file from the [latest release](https://github.com/Hirutiya/Meteor-Shower-Animation/releases/latest)
+1. Download the `Meteor Shower Animation.zip` file from the [latest release](https://github.com/Hirutiya/Meteor-Shower-Animation/releases/latest).
 2. Extract and open the `.zip` file.
 3. Double-click `MeteorShower.exe` to launch the animation instantly.
 
