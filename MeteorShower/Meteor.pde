@@ -9,6 +9,9 @@ class Meteor {
   
   float cX, cY;
 
+  color cachedColor;
+  float cachedThickness;
+
   Meteor(float centerX, float centerY, boolean randomStart) {
     this.cX = centerX;
     this.cY = centerY;
@@ -20,6 +23,10 @@ class Meteor {
     this.radius = random(width * 0.3, width * 0.6);
     this.speed = random(minSpeed, maxSpeed);
     this.meteorLength = random(0.02, 0.06);
+
+    float hue = map(radius, width * 0.3, width * 0.6, 180, 320);
+    this.cachedColor = color(hue, 80, 100);
+    this.cachedThickness = map(speed, minSpeed, maxSpeed, 1.5, 3.5);
   }
 
   void update() {
@@ -30,11 +37,8 @@ class Meteor {
   }
 
   void display() {
-    float hue = map(radius, width * 0.3, width * 0.6, 180, 320); 
-    stroke(hue, 80, 100);
-
-    float thickness = map(speed, minSpeed, maxSpeed, 1.5, 3.5);
-    strokeWeight(thickness);
+    stroke(cachedColor);
+    strokeWeight(cachedThickness);
 
     float headX = cX + cos(angle) * radius;
     float headY = cY - sin(angle) * radius; 
